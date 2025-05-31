@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    flex-wrap: wrap;
+  }
+  
+  header .logo h1 {
+    font-size: 1.8rem;
+    color: #00e5ff;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00e5ff;
+  }
+  
+  #toggle-theme {
+    background-color: #00e5ff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #toggle-theme:hover {
+    background-color: #00bcd4;
+  }
+  
+  section {
+    padding: 60px 20px;
+  }
+  
+  .home {
+    background-color: #1c1c1c;
+    text-align: center;
+  }
+  
+  .home h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .home p {
+    font-size: 1.5rem;
+  }
+  
+  .about, .portfolio {
+    background-color: #222;
+  }
+  
+  .about h2, .portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  .projects-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00e5ff55;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #00e5ff44;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00e5ffcc;
+  }
+  
+  footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    color: #f1f1f1;
+  }
+  
+  .light-mode {
+    background-color: #f4f4f4;
+    color: #111;
+  }
+  
+  .light-mode header,
+  .light-mode footer {
+    background-color: #ddd;
+  }
+  
+  .light-mode nav ul li a {
+    color: #111;
+  }
+  
+  .light-mode .project-card {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #aaa;
+    border: 1px solid #ccc;
+  }
+  
+  .light-mode #toggle-theme {
+    background-color: #111;
+    color: #fff;
+  }
